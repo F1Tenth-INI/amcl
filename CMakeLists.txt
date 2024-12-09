@@ -79,7 +79,7 @@ endif (HAVE_DRAND48)
 
 # NVCC flags
 set(CUDA_NVCC_FLAGS "${CUDA_NVCC_FLAGS};-Xcompiler -std=c++11")
-set(CUDA_NVCC_FLAGS "${CUDA_NVCC_FLAGS};-gencode arch=compute_61,code=sm_61")
+set(CUDA_NVCC_FLAGS "${CUDA_NVCC_FLAGS};-gencode arch=compute_72,code=sm_72")
 if(CMAKE_BUILD_TYPE STREQUAL "Debug")
   set(CUDA_NVCC_FLAGS "${CUDA_NVCC_FLAGS};-G;-g;-lineinfo;--ptxas-options=-v")
 else()
